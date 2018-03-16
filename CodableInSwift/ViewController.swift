@@ -26,7 +26,11 @@ class ViewController: UIViewController {
         self.DecodingByRenamingProperties()
         
         //Handle multiple level of Nested properties or objects
-        //self.NestedPropertiesEncoding()
+        self.NestedPropertiesEncoding()
+        self.NestedPropertiesDecoding()
+        
+        //Merge multiple level of custom object in JSON or class model whicle encoding/decoding
+        self.DecodingByChangingNestingLevelOfProperties()
         self.DecodingByChangingNestingLevelOfProperties()
         
         //Merge the multiple Nesting levels
