@@ -58,6 +58,8 @@ class ViewController: UIViewController {
         if let encodedObjectJsonString = String(data: encodedObject!, encoding: .utf8)
         {
             print(encodedObjectJsonString)
+            //Output
+            //{"carSize":{"length":200,"height":100},"companyURL":"www.honda.com","isNew":true,"otherDetailsData":{"color":"Red","fuelType":"Petrol"},"yearOfManufacture":2018,"carType":"Sedan","name":"City ZX"}
         }
         print("End of the Story...")
         print("The End")
@@ -104,6 +106,8 @@ class ViewController: UIViewController {
         {
             //It will encode only selected properties - name, age, gender as we have defined CodingKeys enum in Person class. For more info, check the definition of Person class
             print(encodedObjectJsonString)
+            //Output
+            //{"name":"Singh, Viresh","age":30,"gender":"Male"}
         }
         return
     }
@@ -144,6 +148,8 @@ class ViewController: UIViewController {
             //author -> writtenBy
             //numberOfPages ->pagesInTheBook
             print(encodedObjectJsonString)
+            //Output:
+            //{"writtenBy":"Stephen Hawking","bookName":"The brief history of time","isReleased":true,"pagesInTheBook":226,"publisher":"Transworld Digital"}
         }
         return
     }
@@ -203,6 +209,8 @@ class ViewController: UIViewController {
         if let encodedObjectJsonString = String(data: encodedData!, encoding: .utf8)
         {
             print(encodedObjectJsonString)
+            //Output:
+            //{"phone":"9999999999","aisles":[{"name":"New Arrivals","shelves":[{"name":"Electronics","products":[{"points":100,"productDescription":"iPad Gold, 256 GB, 10.5 Inch","name":"Apple iPad Pro","price":850}]}]}],"name":"Wallmart","address":"Melville, NY"}
         }
     }
     
@@ -265,6 +273,8 @@ class ViewController: UIViewController {
         {
             //Notice the nesting level of Height and width by replacing size
             print(encodedObjectJsonString)
+            //Output
+            //{"height":100,"name":"Some Image","url":"www.someurl.com/someimage.jpg","width":200}
         }
     }
     
